@@ -1,0 +1,11 @@
+{
+  "name": "mobieleapp",
+  "version": "1.0.0",
+  "description": "Mijn mobiele webapp",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"No tests yet\""
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

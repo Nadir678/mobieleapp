@@ -1,0 +1,43 @@
+
+
+body{
+  
+  margin-left: 180px; /* 140px + 20px padding links + 20px padding rechts */
+
+
+    
+  background: linear-gradient(135deg, #d9f7e9, #a8e6cf);
+  
+}
+
+
+.sidebar {
+  width: 100px;
+  height: 100vh; /* volledige hoogte */
+  background: #1eac27;
+  padding: 20px;
+  position: fixed; /* blijft aan de zijkant */
+  top: 0;
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+

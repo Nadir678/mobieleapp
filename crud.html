@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head> 
+        
+
+         <script src="lokale-storage.js"></script>
+        <link rel ="stylesheet" href="style.css">
+        
+
+  <meta charset="UTF-8">
+  <title>voedings schema</title>
+</head>
+<body>      <nav class="sidebar ">
+          <ul>  <li><a href="index.html">Home</a> </li> 
+          </ul>
+
+           <ul>  <li><a href="crud.html">voedingschema</a> </li> 
+          </ul>
+</nav>
+     <h1> gezondheid</h1>
+     
+
+  <h1>voedings schema</h1>
+
+  <form id="itemForm">
+    <input type="date" id="date" required>
+    <input type="text" id="category" placeholder="Categorie" required>
+    <input type="text" id="description" placeholder="Omschrijving" required>
+    <input type="number" id="amount" placeholder="Waarde" required>
+    <button type="submit">Toevoegen</button>
+  </form>
+
+  <div>
+    <label>Filter periode:</label>
+    <select id="periodFilter">
+      <option value="all">Alles</option>
+      <option value="day">Dag</option>
+      <option value="week">Week</option>
+      <option value="month">Maand</option>
+    </select>
+  </div>
+
+  <div id="itemsContainer"></div>
+
+ 
+</body>
+</html>
