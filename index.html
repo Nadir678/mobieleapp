@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>  
+  
     
         <link rel= stylesheet href="style.css">
-     <script src="lokale-storage.js"></script>
+        <script src="lokale-storage.js"></script>
      <link rel="manifest" href="manifest.json">
-
+     <script src="script.js" defer></script>
+     
+ <script src="sc"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
@@ -22,12 +25,77 @@
                <ul> <li><a href="mentaleGezondheid.html">mentale gezondheid</a></li></ul>
           </ul>
           <ul> <li> <a href="gezondheidinfo.html">gezondheidinfo</a></li></ul>
+
+
+   
+
 </nav>
-     
-     
 
 
 
-    
+
+
+<div class="content">
+
+    <section class="hero">
+        <h1>Gezonde voeding & dieet</h1>
+        <p>Gezond eten hoeft niet ingewikkeld te zijn. Hier vind je duidelijke uitleg, praktische tips en handige tools om stap voor stap gezonder te eten.</p>
+    </section>
+
+    <section class="blok">
+        <h2>Wat is gezonde voeding?</h2>
+        <p>Gezonde voeding draait om balans: veel groente en fruit, volkoren producten, gezonde vetten, voldoende eiwitten en weinig toegevoegde suikers. Hier leer je wat je lichaam écht nodig heeft.</p>
+    </section>
+
+    <section class="blok">
+        <h2>Jouw doel</h2>
+        <ul>
+            <li>Afvallen op een gezonde manier</li>
+            <li>Spiermassa opbouwen</li>
+            <li>Op gewicht blijven met slimme keuzes</li>
+        </ul>
+    </section>
+
+    <section class="blok">
+        <h2>Praktische voedingstips</h2>
+        <ul>
+            <li>Snelle gezonde ontbijtideeën</li>
+            <li>Gezonde lunch voor werk of school</li>
+            <li>Slimme tussendoortjes zonder suikerbom</li>
+            <li>Voorbeelden van een gezond dagmenu</li>
+        </ul>
+    </section>
+
+    <section class="blok">
+        <h2>Handige tools</h2>
+        <ul>
+            <li>Calorie‑ en behoefte‑calculator</li>
+            <li>Dagmenu’s per doel (afvallen / spieropbouw)</li>
+        </ul>
+    </section>
+
+    <section class="blok">
+        <h2>Veelgestelde vragen</h2>
+        <ul>
+            <li>Hoeveel moet ik per dag drinken?</li>
+            <li>Zijn koolhydraten slecht?</li>
+            <li>Hoe vaak mag ik snacken?</li>
+        </ul>
+    </section>
+
+    <section class="cta">
+        <a class="button" href="gezondheidinfo.html">Start met gezonder eten</a>
+    </section>
+
+</div>
+
+    <script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js")
+    .then(() => console.log("Service worker geregistreerd"));
+}
+</script>
+
+
 </body>
 </html>

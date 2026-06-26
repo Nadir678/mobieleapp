@@ -1,43 +1,337 @@
-
-
-body{
-  
-  margin-left: 180px; /* 140px + 20px padding links + 20px padding rechts */
-
-
-    
-  background: linear-gradient(135deg, #d9f7e9, #a8e6cf);
-  
+/* Algemene stijl */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
 }
 
-
+/* Sidebar */
 .sidebar {
-  width: 100px;
-  height: 100vh; /* volledige hoogte */
-  background: #1eac27;
-  padding: 20px;
-  position: fixed; /* blijft aan de zijkant */
-  top: 0;
-  left: 0;
+    width: 220px;
+    background: #2c3e50;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
 }
 
 .sidebar ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
 }
 
-.sidebar li {
-  margin-bottom: 20px;
+.sidebar ul li {
+    margin: 10px 0;
 }
 
-.sidebar a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
+.sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 6px;
+    transition: 0.2s;
 }
 
-.sidebar a:hover {
-  text-decoration: underline;
+.sidebar ul li a:hover {
+    background: #34495e;
 }
 
+/* Content */
+.content {
+    margin-left: 240px;
+    padding: 30px;
+}
+
+/* Hero sectie */
+.hero {
+    background: #4CAF50;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hero h1 {
+    margin-top: 0;
+}
+
+/* Blokken */
+.blok {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.blok h2 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.blok ul {
+    padding-left: 20px;
+}
+
+/* CTA knop */
+.button {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: #45a049;
+}
+
+/* CTA sectie */
+.cta {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* ----------------------------- */
+/* 📱 RESPONSIVE DESIGN */
+/* ----------------------------- */
+
+/* Tablet */
+@media (max-width: 900px) {
+    .content {
+        margin-left: 200px;
+        padding: 20px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+}
+
+/* Telefoon */
+@media (max-width: 600px) {
+
+    /* Sidebar wordt topbar */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px 0;
+    }
+
+    .sidebar ul {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .sidebar ul li a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    /* Content onder de topbar */
+    .content {
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    /* Blokken full width */
+    .blok {
+        padding: 15px;
+    }
+
+    .hero {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+}
+
+
+body{
+  margin: 0;
+  font-family: arial sans-serif;
+  
+}
+h1 {
+    margin-left: 260px;
+    margin-top: 30px;
+    color: #2c3e50;
+}
+
+/* --- Sidebar (je had al) --- */
+.sidebar {
+    width: 220px;
+    background: #2c3e50;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.sidebar ul li a:hover {
+    background: #34495e;
+}
+
+/* --- Formulier container --- */
+form {
+    margin-left: 260px;
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* --- Inputvelden --- */
+form input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+/* --- Knop --- */
+form button {
+    background: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form button:hover {
+    background: #45a049;
+}
+
+/* --- Filter dropdown --- */
+#periodFilter {
+    margin-left: 260px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+/* --- Items container --- */
+#itemsContainer {
+    margin-left: 260px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* --- Elk item in een mooi vakje --- */
+.item-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.item-date {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.item-category {
+    background: #e8f5e9;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #4CAF50;
+    width: fit-content;
+}
+
+.item-delete {
+    background: #e74c3c;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.item-delete:hover {
+    background: #c0392b;
+}
+
+/* --- Responsive voor mobiel --- */
+@media (max-width: 600px) {
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    h1 {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    form, #periodFilter, #itemsContainer {
+        margin-left: 0;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .item-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}

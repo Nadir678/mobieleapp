@@ -3,7 +3,7 @@
 <head> 
         
 
-         <script src="lokale-storage.js"></script>
+       
         <link rel ="stylesheet" href="style.css">
         
 
@@ -16,17 +16,20 @@
 
            <ul>  <li><a href="crud.html">voedingschema</a> </li> 
           </ul>
+
+          <ul> <li><a href="mentaleGezondheid.html">mentale Gezondheid</a></li></ul>
+          <ul> <li><a href="gezondheidinfo.html">gezondheidinfo</a></li></ul>
 </nav>
-     <h1> gezondheid</h1>
+    
      
 
   <h1>voedings schema</h1>
 
   <form id="itemForm">
     <input type="date" id="date" required>
-    <input type="text" id="category" placeholder="Categorie" required>
-    <input type="text" id="description" placeholder="Omschrijving" required>
-    <input type="number" id="amount" placeholder="Waarde" required>
+    <input type="text" id="category" placeholder="soort product" required>
+    <input type="text" id="description" placeholder="voedingswaarde" required>
+    <input type="number" id="amount" placeholder="gram" required>
     <button type="submit">Toevoegen</button>
   </form>
 
@@ -42,6 +45,7 @@
 
   <div id="itemsContainer"></div>
 
+    <script src="lokale-storage.js"></script>
  
 </body>
 </html>
